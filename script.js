@@ -5,30 +5,30 @@ osoby.innerHTML = person
 
 const imiona = []
 
-if (person !== '') {
+
+console.log(imiona) */
+
+let person
+const imiona = []
+let i = 0
+do {
+    i++
+    person = prompt("Jak masz na imię?")
+
+//osoby.innerHTML = person
+
+
+if (person !== null) {
     imiona.push(person)
     
 }
 
-console.log(imiona) */
 
 
- const imiona = []
-let i = 0
-do {
-    i++
-    let person = prompt("Jak masz na imię?")
-
-osoby.innerHTML = person
+} while(person !== null) 
 
 
-imiona.push(person)
 console.log(imiona)
-
-} while(prompt.innerHTML !== '') //czemu to nie dziala jak nic nie wpisuję
-
-
-
 
 let przycisk = document.querySelector('.btn-add')
 let input = document.querySelector('input') 
