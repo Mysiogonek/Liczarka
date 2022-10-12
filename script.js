@@ -1,7 +1,31 @@
-osoby = document.querySelectorAll('#imie')
-// console.log(osoby)
+ osoby = document.querySelector('#imie')
+/* let person = prompt("Jak masz na imię?")
 
- let person = prompt("Jak masz na imię?")
+osoby.innerHTML = person
+
+const imiona = []
+
+if (person !== '') {
+    imiona.push(person)
+    
+}
+
+console.log(imiona) */
+
+
+ const imiona = []
+let i = 0
+do {
+    i++
+    let person = prompt("Jak masz na imię?")
+
+osoby.innerHTML = person
+
+
+imiona.push(person)
+console.log(imiona)
+
+} while(prompt.innerHTML !== '') //czemu to nie dziala jak nic nie wpisuję
 
 
 
@@ -19,11 +43,7 @@ const wczesniejszePunkty = document.querySelector("#suma")
 
 const dodawanie = () => {
    if (input.value !== '' ) {
-    // przechwycone = document.createElement('id');
-    //przechwycone.textContent = wpisane - czemu jak tego uzywalam, a nie tego ponizej, to nie dzialalo
-    // przechwycone.textContent = parseInt(input.value) 
-    // wczesniejszePunkty.append(przechwycone)
-    
+  
     console.log('input.value', input.value)
     
     
@@ -33,11 +53,6 @@ const dodawanie = () => {
 
     console.log({a, b})
 
-    // function ugh (a,b) {
-    //     a + b
-    // }
-    // ugh()
-    // let x = ugh.value
     wczesniejszePunkty.textContent = a + b
    }  
 }
