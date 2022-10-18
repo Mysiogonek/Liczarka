@@ -1,51 +1,50 @@
  osoby = document.querySelector('#imie')
-/* let person = prompt("Jak masz na imię?")
-
-osoby.innerHTML = person
-
-const imiona = []
-
-
-console.log(imiona) */
-
+ divTodo = document.querySelector('.todo')
+ paragraf = document.querySelector('#abc')
+ let nowyDiv 
+ let noweP 
+ 
+    
+ const stworzNowyDiv = () => {
+    let nowyDiv = document.createElement('div')
+    nowyDiv.innerHTML = '<span id="suma">uuu</span>';
+   divTodo.appendChild(nowyDiv);
+   
+    let noweP = document.createElement('p');
+    //noweP.id = 'abc'
+    noweP.innerHTML = '<input type="number" class="todo-input" placeholder="Wpisz punkty"> <button class="btn-add">Dodaj</button>';
+    nowyDiv.appendChild(noweP)
+}  
+ 
 let person
 const imiona = []
+
 let i = 0
 do {
     i++
     person = prompt("Jak masz na imię?")
-
-//osoby.innerHTML = person
-
-
-if (person !== null) {
-    imiona.push(person)
+    if (person !== null) {
+    imiona.push(person);  
+    stworzNowyDiv()
+    //divTodo.appendChild(nowyDiv); - czemu jak tu bylo to sie tlyko jeden div tworzyl, a jak dodalam to do funkcji stworznowydiv to dziala jak nalezy???
+    //stworzNoweP()  z tym sie tylko jeden div tworzy
     
-}
-
-
-
+    }
+    
 } while(person !== null) 
-
 
 console.log(imiona)
 
 let przycisk = document.querySelector('.btn-add')
 let input = document.querySelector('input') 
 const wpisane = parseInt(input.value)
-
 const wczesniejszePunkty = document.querySelector("#suma")
-
-
-   
-
 
 
 const dodawanie = () => {
    if (input.value !== '' ) {
   
     console.log('input.value', input.value)
-    
     
     let a = (parseInt(input.value))
     input.value = ''
