@@ -16,8 +16,10 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 120px;
-    font-family: 'Great Vibes';
+    font-family: 'Oxygen';
+    font-size: 18px;
     background-color: var(--light);
+    
 }
 
 h1 {
@@ -31,28 +33,44 @@ h1 {
 }
 
 .todo {
-    width: 800px;
+    width: 600px;
     border-radius: 5px;
     background: rgb(250, 250, 250);
     box-shadow: 4px 4px 5px rgba(82, 82, 82, .4);
     text-align: center;
+    
 }
 
 .header {
     border-radius: 5px 5px 0 0;
     padding: 40px;
     /* background-image: linear-gradient(340deg, #140129 0%, #4822a0 100%); */
-    background-image: url("https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1150&q=80");
+    background-image: url("https://images.unsplash.com/photo-1597567175782-1e5771f7f313?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    ;
+    font-size: 28px;
+    font-family: "Warnes", sans-serif;
+        color: rgb(255, 255, 255);
+        text-shadow:
+            0 0 7px rgb(255, 255, 255),
+            0 0 10px rgb(255, 255, 255),
+            0 0 21px rgb(255, 255, 255),
+            0 0 42px #3700ff,
+            0 0 82px rgb(0, 102, 255),
+            0 0 92px rgb(98, 0, 255),
+            0 0 102px rgb(251, 255, 0),
+            0 0 151px rgb(76, 0, 255);
+    
+      
 }
 
 .todo-input {
     width: 25%;
-    padding: 10px 20px;
+    padding: 10px 20px; 
     margin-right: 20px;
-    border: none;
+    border: nborder: 1px solid #464b46;;
     border-radius: 5px;
-    color: var(--light-dark);
-    background-color: var(--light);
+    /*color: var(--light-dark);
+    background-color: var(--light);*/
 }
 
 
@@ -63,7 +81,7 @@ h1 {
 
 .btn-add {
     padding: 10px 22px;
-    border: none;
+    border: 2px solid #464b46;
     border-radius: 5px;
     color: var(--deep-dark);
     background-color: var(--light);
@@ -82,25 +100,6 @@ h1 {
     padding: 20px 0;
 }
 
-.todolist h3 {
-    text-transform: uppercase;
-    margin-bottom: 16px;
-}
-
-.todolist li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px;
-    padding-left: 20px;
-    text-align: left;
-    list-style: none;
-    background-color: var(--light);
-}
-
-.tools {
-    display: inline-block;
-}
 
 .tools button {
     padding: 15px 10px;
@@ -114,18 +113,7 @@ h1 {
     background-color: #ddd;
 }
 
-.complete {
-    color: var(--light-blue);
-}
 
-.edit {
-    font-weight: bold;
-    color: rgb(15, 179, 69);
-}
-
-.delete {
-    color: tomato;
-}
 
 .completed {
     font-size: 12px;
