@@ -9,6 +9,7 @@ const createNewUser = (userName) => {
   
   <input type="number" class="todo-input" placeholder="Wpisz punkty">
   <button class="btn-add">Dodaj</button>
+  <br><br>
   `;
   usersDiv.appendChild(newUserDiv);
 
