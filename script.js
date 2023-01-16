@@ -1,5 +1,12 @@
 
 usersDiv = document.querySelector("#users");
+//historiaDiv = document.querySelector("#logi")
+
+
+let resetuj = document.createElement("button");
+  resetuj.innerHTML = `
+  <button class="btn-reset">Resetuj</button>
+  `;
 
 
 const createNewUser = (userName) => {
@@ -16,6 +23,7 @@ const createNewUser = (userName) => {
   const addButton = newUserDiv.querySelector(".btn-add");
   const input = newUserDiv.querySelector("input");
   const points = newUserDiv.querySelector("#suma");
+ 
 
   const addPoints = () => {
     if (input.value !== "") {
@@ -39,9 +47,15 @@ const createNewUser = (userName) => {
    }
   });
 
- 
-};
+  usersDiv.appendChild(resetuj);
 
+  const resetPoints = () => {
+    points.textContent = '0'
+  }
+  
+  resetuj.addEventListener("click", resetPoints);
+  
+};
 
 
 let newUserName;
@@ -53,3 +67,11 @@ do {
   
   createNewUser(newUserName);
 } while (true);
+
+
+//if (addPoints == true){
+//}
+
+const points = document.querySelectorAll("#suma");
+
+
