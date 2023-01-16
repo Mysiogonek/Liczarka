@@ -1,3 +1,9 @@
+
+.WebContainer{
+    width: auto;
+    height: auto;
+}
+
 * {
     box-sizing: border-box;
     margin: 50;
