@@ -13,7 +13,7 @@ const createNewUser = (userName) => {
   newUserDiv.innerHTML = `
   <div>${userName}: <span id="suma">0</span></div>
   
-  <input type="number" class="todo-input" placeholder="Wpisz punkty">
+  <input type="number" class="todo-input text-black" placeholder="Wpisz punkty">
   <button class="btn-add bg-transparent border-2 rounded-md font-orbitron text-white px-3 py-1 hover:bg-slate-700 active:bg-slate-900 tracking-wide">Dodaj</button>
   <br><br>
   `;
