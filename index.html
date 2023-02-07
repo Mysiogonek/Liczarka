@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta content="'width=device-width,initial-scale=1"
-    name="viewport">
+    
 
     <title>Liczarka</title>
 
@@ -17,9 +16,9 @@
     />
     
 
-<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Srisakdi&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Warnes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Satisfy&display=swap" rel="stylesheet">
+
+
 <link rel="stylesheet" href="./style.css" />
 
     <!-- dodaj swój kit Font Awesome, jeśli chcesz mieć ikony ☑️ oraz ✖️ -->
@@ -27,17 +26,30 @@
       src="https://kit.fontawesome.com/5a34b284ea.js"
       crossorigin="anonymous"
     ></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      },
+        fontFamily: {
+          orbitron: ['Orbitron', 'sans-serif'],
+      }
+    }
+  }
+</script>
   </head>
 
   <body>
-    <div class="todo">
-      <div class="header">
+    <div class= "  space-y-5 p-9 mt-6  box-border h-302 w-100 p-4 border-4 w-7/12   "    bg-cover style="background-image: url(https://images.unsplash.com/photo-1533577116850-9cc66cad8a9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)"  >
+      <div class="  bg-transparent  tracking-widest  text-center text-4xl  font-orbitron font-extrabold text-stone-200  ">
         <h1>Punktacja</h1>
       </div>
-      <br>
-      <div id="users"></div>
-      <div id="logi"></div>
-    <!--<h2>Historia</h2>!-->
+      <div id="users" class=" h-150 w-50 p-4  w-fit text-center  bg-gradient-to-r opacity-90 from-gray-800 to-gray-400 px-20"></div>
+      
     </div>
     
   </body>

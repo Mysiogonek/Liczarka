@@ -1,11 +1,10 @@
 
 usersDiv = document.querySelector("#users");
-//historiaDiv = document.querySelector("#logi")
 
 
 let resetuj = document.createElement("button");
   resetuj.innerHTML = `
-  <button class="btn-reset">Resetuj</button>
+  <button class="btn-reset tracking-wide border-2  bg-transparent  rounded-md font-orbitron  text-white ml-10 px-10 hover:bg-slate-700">Resetuj</button>
   `;
 
 
@@ -15,7 +14,7 @@ const createNewUser = (userName) => {
   <div>${userName}: <span id="suma">0</span></div>
   
   <input type="number" class="todo-input" placeholder="Wpisz punkty">
-  <button class="btn-add">Dodaj</button>
+  <button class="btn-add bg-transparent border-2 rounded-md font-orbitron text-white px-3 py-1 hover:bg-slate-700 tracking-wide">Dodaj</button>
   <br><br>
   `;
   usersDiv.appendChild(newUserDiv);
@@ -59,14 +58,17 @@ const createNewUser = (userName) => {
 
 
 let newUserName;
-do {
-  newUserName = prompt("Jak masz na imię?");
-  if (newUserName == null || newUserName.length < 1) {
-    break;
-  }
+// do {
+//   newUserName = prompt("Jak masz na imię?");
+//   if (newUserName == null || newUserName.length < 1) {
+//     break;
+//   }
   
-  createNewUser(newUserName);
-} while (true);
+//   createNewUser(newUserName);
+// } while (true);
+
+createNewUser("Rafał");
+createNewUser("Magda");
 
 
 //if (addPoints == true){
