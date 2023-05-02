@@ -8,6 +8,16 @@ let resetuj = document.createElement("button");
   `;
 
 
+let newUserName;
+do {
+  newUserName = prompt("Jak masz na imię?");
+  if (newUserName == null || newUserName.length < 1) {
+  break;
+   }
+  
+createNewUser(newUserName);
+
+
 const createNewUser = (userName) => {
   let newUserDiv = document.createElement("div");
   newUserDiv.innerHTML = `
@@ -57,14 +67,7 @@ const createNewUser = (userName) => {
 };
 
 
-let newUserName;
-do {
-  newUserName = prompt("Jak masz na imię?");
-  if (newUserName == null || newUserName.length < 1) {
-  break;
-   }
-  
-createNewUser(newUserName);
+
 // } while (true);
 
 
