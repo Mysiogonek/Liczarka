@@ -67,8 +67,7 @@ let newUserName;
 //   createNewUser(newUserName);
 // } while (true);
 
-createNewUser("Rafał");
-createNewUser("Magda");
+
 
 
 //if (addPoints == true){
