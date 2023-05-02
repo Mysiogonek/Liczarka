@@ -58,11 +58,11 @@ const createNewUser = (userName) => {
 
 
 let newUserName;
-// do {
-//   newUserName = prompt("Jak masz na imię?");
-//   if (newUserName == null || newUserName.length < 1) {
-//     break;
-//   }
+do {
+  newUserName = prompt("Jak masz na imię?");
+  if (newUserName == null || newUserName.length < 1) {
+  break;
+   }
   
 //   createNewUser(newUserName);
 // } while (true);
