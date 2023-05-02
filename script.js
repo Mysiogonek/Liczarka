@@ -64,7 +64,7 @@ do {
   break;
    }
   
-//   createNewUser(newUserName);
+createNewUser(newUserName);
 // } while (true);
 
 
