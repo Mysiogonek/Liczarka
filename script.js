@@ -2,10 +2,6 @@
 usersDiv = document.querySelector("#users");
 
 
-let resetuj = document.createElement("button");
-  resetuj.innerHTML = `
-  <button class="btn-reset tracking-wide border-2  bg-transparent  rounded-md font-orbitron  text-white ml-10 px-10 hover:bg-slate-700 active:bg-slate-900">Resetuj</button>
-  `;
 
 
 let newUserName;
@@ -27,8 +23,9 @@ const createNewUser = (userName) => {
   <button class="btn-add bg-transparent border-2 rounded-md font-orbitron  text-white px-3 py-1 hover:bg-slate-700 active:bg-slate-900 tracking-wide">Dodaj</button>
   <br><br>
   `;
+
   usersDiv.appendChild(newUserDiv);
-  
+}
   
   createNewUser(newUserName);
 
@@ -59,6 +56,12 @@ const createNewUser = (userName) => {
    }
   });
 
+  let resetuj = document.createElement("button");
+  resetuj.innerHTML = `
+  <button class="btn-reset tracking-wide border-2  bg-transparent  rounded-md font-orbitron  text-white ml-10 px-10 hover:bg-slate-700 active:bg-slate-900">Resetuj</button>
+  `;
+
+  
   usersDiv.appendChild(resetuj);
 
   const resetPoints = () => {
