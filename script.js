@@ -15,7 +15,7 @@ do {
   break;
    }
   
-createNewUser(newUserName);
+
 
 
 const createNewUser = (userName) => {
@@ -28,6 +28,9 @@ const createNewUser = (userName) => {
   <br><br>
   `;
   usersDiv.appendChild(newUserDiv);
+  
+  
+  createNewUser(newUserName);
 
   const addButton = newUserDiv.querySelector(".btn-add");
   const input = newUserDiv.querySelector("input");
